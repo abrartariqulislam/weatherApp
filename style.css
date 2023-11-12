@@ -53,13 +53,16 @@ body{
     font-size: 20px;
     font-weight: bolder;
 }
-
+.display{
+    display: none;
+}
 .incorrectCity p{
     font-size: 32px;
-    color: rgb(238, 63, 63);
+    color: white;
     font-weight: 500;
     font-style: italic;
     margin:15px 70px 0 0;
+    display: none;
 }
 
 .weather_icon{
