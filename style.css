@@ -54,6 +54,14 @@ body{
     font-weight: bolder;
 }
 
+.incorrectCity p{
+    font-size: 32px;
+    color: rgb(238, 63, 63);
+    font-weight: 500;
+    font-style: italic;
+    margin:15px 70px 0 0;
+}
+
 .weather_icon{
     width: 170px;
     margin-top: 30px;
