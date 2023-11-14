@@ -41,8 +41,15 @@ body{
     margin-right: 16px;
     font-size: 18px;
     width: 100%;
-}
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    overflow: hidden;
 
+}
+.palaceholder_overlay{
+
+}
 .search button{
     border: 0;
     outline: 0;
