@@ -7,6 +7,7 @@ const searchInput = document.querySelector(".search input");
 const display = document.querySelector(".display");
 const weatherIcon = document.querySelector(".weather_icon");
 const incorrectCity = document.querySelector(".incorrectCity p");
+const placeholder_overlay = document.querySelector(".placeholder_overlay");
 
 const apiKey = "c92b59c23cc99d80c604119d57127a98";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric";
@@ -62,3 +63,13 @@ const checkWether = async (cityName) => {
 searchBtn.addEventListener("click", () => {
   checkWether(searchInput.value);
 });
+
+
+// custom placeholder
+searchInput.addEventListener("input",(e)=>{
+  if(e.target.value){
+    placeholder_overlay.style.display = "none"
+  }else{
+    placeholder_overlay.style.display = "block"
+  }
+})
